@@ -1,0 +1,66 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; background:#f4f6f9; color:#2c3e50; }
+header { background:linear-gradient(135deg,#1e3c72,#2a5298); color:white; padding:20px 30px; }
+header .subtitle { font-size:0.85rem; opacity:0.85; }
+.container { max-width:1200px; margin:0 auto; padding:20px; }
+
+.tabs { display:flex; gap:10px; margin-bottom:20px; }
+.tab-btn { padding:10px 20px; background:white; border:2px solid #dfe6ec; border-radius:8px; text-decoration:none; font-weight:600; color:#555; }
+.tab-btn.active, .tab-btn:hover { background:#2a5298; color:white; border-color:#2a5298; }
+
+.card { background:white; border-radius:12px; padding:25px; box-shadow:0 3px 12px rgba(0,0,0,0.06); margin-bottom:20px; }
+.card h2 { margin-bottom:20px; color:#1e3c72; }
+
+.form-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; margin-bottom:15px; }
+label { display:block; margin-bottom:6px; font-size:0.85rem; font-weight:600; color:#444; }
+input, select, textarea { width:100%; padding:10px 12px; border:1px solid #d7dee5; border-radius:8px; font-size:0.95rem; font-family:inherit; }
+textarea { min-height:70px; resize:vertical; }
+
+.btn { padding:11px 24px; border:none; border-radius:8px; font-weight:600; cursor:pointer; text-decoration:none; display:inline-block; }
+.btn-primary { background:#2a5298; color:white; }
+.btn-danger { background:#e74c3c; color:white; }
+.btn-outline { background:white; border:1px solid #2a5298; color:#2a5298; }
+.btn-sm { padding:6px 12px; font-size:0.8rem; }
+
+.filter-bar { display:flex; gap:10px; margin-bottom:15px; }
+table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+th, td { padding:10px; text-align:left; border-bottom:1px solid #eef1f4; }
+th { background:#f8f9fb; }
+.table-wrap { overflow-x:auto; }
+
+.alert-success { background:#d4edda; color:#155724; padding:12px 18px; border-radius:8px; margin-bottom:15px; }
+
+.kategori-title { margin:20px 0 10px; color:#2a5298; border-bottom:2px solid #2a5298; padding-bottom:5px; }
+.aspek-row { background:#f9fbfd; border:1px solid #eef1f4; border-radius:8px; padding:12px; margin-bottom:10px; }
+.aspek-text { font-size:0.9rem; margin-bottom:8px; }
+.aspek-options { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:8px; font-size:0.85rem; }
+.aspek-options label { display:flex; align-items:center; gap:5px; font-weight:400; }
+.aspek-options input { width:auto; }
+.aspek-catatan { font-size:0.85rem; }
+
+.print-toolbar { max-width:900px; margin:20px auto; display:flex; gap:10px; }
+.print-sheet { max-width:900px; margin:0 auto; background:white; padding:40px; font-size:13px; line-height:1.5; }
+.print-title { text-align:center; font-size:16px; }
+.print-subtitle { text-align:center; font-size:14px; margin-bottom:20px; }
+.print-info td { padding:3px 0; font-size:13px; border:none; }
+.print-info .label { width:220px; }
+.instruksi { margin:15px 0; font-style:italic; }
+.print-table { border:1px solid #333; margin-bottom:20px; }
+.print-table th, .print-table td { border:1px solid #333; padding:6px; font-size:12px; }
+.print-table th { background:#eee; text-align:center; }
+.print-table .center { text-align:center; }
+.print-table .aspek-cell { text-align:left; }
+.kategori-row td { background:#dde6f0; }
+.print-essay { margin-bottom:20px; }
+.essay-text { border-bottom:1px dotted #888; min-height:20px; margin-bottom:12px; padding:4px 0; }
+.print-dokumentasi .foto-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:10px; }
+.print-dokumentasi img { width:100%; border:1px solid #ccc; }
+.print-signature { display:flex; justify-content:space-between; margin-top:40px; }
+.signature-box { text-align:center; width:250px; }
+.signature-space { height:60px; }
+
+@media print {
+    body { background:white; }
+    .no-print { display:none !important; }
+    .print-sheet { box-shadow:none; padding:0; }
+}
